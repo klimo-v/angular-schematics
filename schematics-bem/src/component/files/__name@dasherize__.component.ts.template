@@ -1,0 +1,13 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: '<%= dasherize(prefix ? `${prefix}-${prefix}` : prefix) %>',
+  templateUrl: './<%= dasherize(name) %>.component.html',
+  styleUrls: ['./<%= dasherize(name) %>.component.css'],
+  host: {
+    '[class.<%= dasherize(name) %>]': 'true'
+  }s
+})
+export class <%= classify(name) %>Component {
+  constructor() { }
+}

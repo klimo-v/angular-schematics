@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "super-ui-component",
+  "title": "BEM Component Schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "The name of the component",
+      "type": "string"
+    },
+    "path": {
+      "description": "Where should be created the file",
+      "type": "string",
+      "format": "path",
+      "x-prompt": "Where should be created the file?",
+      "default": "src/app"
+    },
+    "prefix": {
+      "description": "The component name prefix",
+      "type": "string",
+      "default": ""
+    },
+    "project": {
+      "description": "The project name",
+      "type": "string",
+      "x-prompt": "Enter the project name where you want to create the component"
+    }
+  },
+  "required": []
+}

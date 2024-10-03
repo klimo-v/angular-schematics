@@ -1,0 +1,14 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "schematics-bem": {
+      "description": "A blank schematic.",
+      "factory": "./schematics-bem/index#schematicsBem"
+    },
+    "component": {
+      "description": "Generate the bem component",
+      "factory": "./component/index#component",
+      "schema": "./component/schema.json"
+    }
+  }
+}
