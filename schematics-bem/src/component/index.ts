@@ -24,6 +24,9 @@ export function component(options: Schema): Rule {
     // The error is thrown when executing getWorkspace(host).
     // const workspace = await getWorkspace(host);
 
+    // fixme: klimo-v
+    // We should call the schematics from the root Angular directory because it cannot find the angular.json otherwise
+
     const rules = [
       applyTemplates({
         classify: strings.classify,

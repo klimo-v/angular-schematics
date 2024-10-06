@@ -1,6 +1,6 @@
 {
   "name": "@klimo-v/schematics-bem",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A bem schematics",
   "scripts": {
     "build": "tsc -p tsconfig.json",
@@ -15,7 +15,10 @@
   "schematics": "./src/collection.json",
   "dependencies": {
     "@angular-devkit/core": "^18.2.7",
-    "@angular-devkit/schematics": "^18.2.7",
+    "@angular-devkit/schematics": "^18.2.7"
+  },
+  "peerDependencies": {
+    "@schematics/angular": "^18.2.7",
     "typescript": "~5.5.2"
   },
   "devDependencies": {
